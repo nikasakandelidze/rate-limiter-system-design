@@ -30,7 +30,6 @@ app.all("/api", (req, resp) => {
   const removedOldTimeStamps = timestamps.filter(timestamp=>moment(now).diff(moment(timestamp), 'seconds') <= TIME_PERIOD)
   removedOldTimeStamps.push(now)
   const newTimeStamps = removedOldTimeStamps;
-  console.log(newTimeStamps)
   // Update in memory ttl mechanisms so that if user hasn't sent a request for a long time invalidate it's entry to optimize the storage
   const ttl = ttls[id];
   if(ttl) clearTimeout(ttl)
