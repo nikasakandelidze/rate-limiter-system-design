@@ -1,12 +1,16 @@
 # Rate limiters
 In this repo we discuss the system design of rate limiters and some of the most popular algorithms and their concrete implementations.
 
-# Algorithms
+# Abstract
+For those of you who have never heard of the term "rate limiter",  in it's most basic form, rate limiter is a piece of software that controls your API-s  consumption rate in a given period of time for one specific "identity" / "client" (the proxy term of identity was intentionally used here, since this identity might represent one physical machine/user as well as set of physical machines/clients grouped by some property like location).
+
+# Algorithms for Rate Limiting
 - Fixed window algorithm
 - Rolling window log algorithm
 - Rolling window counter algorithm
 
 ## Fixed window algorithm
+Coming soon
 ## Rolling window log algorithm
 #### State sample
 ![state](./assets/Screenshot%202022-11-28%20at%2013.37.32.png)
