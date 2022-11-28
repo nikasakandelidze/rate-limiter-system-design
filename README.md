@@ -7,8 +7,10 @@ In this repo we discuss the system design of rate limiters and some of the most 
 - Rolling window counter algorithm
 
 ## Fixed window algorithm
-## Rolling window algorithm
-#### Pseudocode algorithm for Rolling window log rate limiting
+## Rolling window log algorithm
+#### State sample
+![state](./assets/Screenshot%202022-11-28%20at%2013.37.32.png)
+#### Pseudocode algorithm
 ![algorithm](./assets/Screenshot%202022-11-26%20at%2022.53.31.png)
 
 ## Rolling window counter algorithm
